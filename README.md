@@ -1,3 +1,3 @@
 # Blog
 
-# Hugovandergeest.nl 
+# http://hugovandergeest.nl
