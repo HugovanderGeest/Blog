@@ -1,54 +1,8 @@
-/*
-   
-    Template Name : DevBlog - Personal Blog Template
-    Author : UiPasta Team
-    Website : http://www.uipasta.com/
-    Support : http://www.uipasta.com/support/
-	
-	
-*/
 
+* {
+    transition: 0.2s;
 
-
-/*
-   
-   Table Of Content
-   
-   1. Global Style
-   2. Preloader
-   3. Menu
-   4. About Me (Left Sidebar)
-   5. About Me Page
-   6. My Portfolio
-   7. Owl Carousel Navigation
-   8. Contact Me
-   9. Testimonials
-  10. Blog Post & Single Blog Page
-  11. Video Tutorials
-  12. Blockquote
-  13. List
-  14. Image Popup
-  15. End Box (Popup When Scroll Down)
-  16. About Author Box
-  17. You May Also Like
-  18. Comment
-  19. Load More Button
-  20. Subscribe Form
-  21. Footer
-  22. Socials Icons
-  23. Syntax Highlighter
-  24. Scroll To Top
-  25. Responsive
-  26. Useful Classes ( Such as : Margin, Padding, colors  "This classes will be helpful for you during designing/development time.")
-  27. UiPasta Credit
- 
-
-*/
-
-
-
-/* Global Style */
-
+}
 
 body {
     font-family: "Poppins", sans-serif;
@@ -186,6 +140,20 @@ button {
    -webkit-font-smoothing: antialiased;
 }
 
+#wpac-comment {
+padding: 10px;
+background-color: white;
+}
+
+.wit {
+    position: absolute;
+    position: absolute;
+background-color: white;
+padding: 20px;
+width: 100%;
+margin-top: -10px;
+}
+
 .button-style {
     color: #e82581;
     overflow: hidden;
@@ -316,7 +284,9 @@ button {
     color: #e82581;
 }
 
-
+.rechts {
+    float: right;
+}
 
 /* About Me (Left Sidebar) */	
 
@@ -324,6 +294,10 @@ button {
     position: fixed;
     width: 20.8%;
     left: 0;
+    box-shadow: -2px -1px 88px 0px rgba(0,0,0,0.17);
+    height: 90vh;
+    overflow: auto;
+    background-color: transparent !important;
 }
 
 .my-pic {
@@ -339,12 +313,12 @@ button {
     text-align: center;
     margin-bottom: 30px;
     background: #ffffff;
-    box-shadow: -2px -1px 88px 0px rgba(0,0,0,0.17);
 }
 
 .my-detail .white-spacing {
     padding: 23px 0;
     border-bottom: 1px dashed #cccccc;
+    margin-top: -10px;
 }
 
 .my-detail h1 {
@@ -509,9 +483,14 @@ tr > td:nth-child(2) {
 }
 
 .post-foto {
-    max-width: 41vw;
+    max-width: 100%;
     border-radius: 10px;
     margin-bottom: 5vh;
+}
+
+.post-foto:hover {
+transform: scale(1.05);
+cursor: pointer;
 }
 
 .form-control {
@@ -753,6 +732,25 @@ blockquote {
     border-left: 5px solid #e82581;
 }
 
+.none {
+    display: none;
+}
+
+input {
+    border-top: transparent 1px solid;
+    border-right: transparent 1px solid;
+    border-left: transparent 1px solid;
+    background-color: none;
+    border-bottom: #e82581 2px solid; 
+    color: #e82581;
+    padding: 10px;
+    border-radius: 5px 0px;
+}
+
+input:hover {
+    background-color: #e82581;
+    color: white;
+}
 
 
 /* List */
@@ -1047,6 +1045,7 @@ blockquote {
   padding: 20px;
   margin: 0;
   text-align: center;
+  margin-top: 20px;
 }
 
 .social-icon:before,
@@ -1283,6 +1282,15 @@ blockquote {
        text-align: left;
        width: 100%;
      }
+}
+
+@media only screen and (max-width:535px) { 
+
+    .rechts {
+        float: left;
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
 
 
